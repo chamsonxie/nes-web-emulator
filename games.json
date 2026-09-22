@@ -223,5 +223,410 @@
   "author": "Artix",
   "year": "2020",
   "desc": "时间主题动作游戏，Action 53 Vol.4 公有领域合集。"
+ },
+ {
+  "id": "the-legends-of-owlia",
+  "name": "The Legends of Owlia",
+  "file": "the-legends-of-owlia.nes",
+  "genre": "动作冒险",
+  "author": "Gradual Games",
+  "year": "2016",
+  "desc": "塞尔达式 homebrew 史诗，在地牢中探索、营救欧莉亚公主。"
+ },
+ {
+  "id": "nomolos-storming-the-catsle",
+  "name": "Nomolos: Storming the Catsle",
+  "file": "nomolos-storming-the-catsle.nes",
+  "genre": "平台跳跃",
+  "author": "Gradual Games",
+  "year": "2012",
+  "desc": "以猫为主题的奇幻平台跳跃，出自 Owlia 原班人马。"
+ },
+ {
+  "id": "double-action-blaster-guys",
+  "name": "Double Action Blaster Guys",
+  "file": "double-action-blaster-guys.nes",
+  "genre": "动作",
+  "author": "NovaSquirrel",
+  "year": "2014",
+  "desc": "双人竞技场射击游戏，GPL 开源发布。"
+ },
+ {
+  "id": "jet-paco",
+  "name": "Jet Paco",
+  "file": "jet-paco.nes",
+  "genre": "平台跳跃",
+  "author": "Mojon Twins",
+  "year": "2016",
+  "desc": "Mojon Twins 出品的太空特工平台冒险。"
+ },
+ {
+  "id": "miedow",
+  "name": "Miedow",
+  "file": "miedow.nes",
+  "genre": "平台跳跃",
+  "author": "Mojon Twins",
+  "year": "2018",
+  "desc": "Cheril 在自己的噩梦中战斗的免费平台游戏。"
+ },
+ {
+  "id": "sir-ababol-remastered",
+  "name": "Sir Ababol Remastered",
+  "file": "sir-ababol-remastered.nes",
+  "genre": "平台跳跃",
+  "author": "Mojon Twins",
+  "year": "2017",
+  "desc": "经典免费平台游戏 Sir Ababol 的重制版。"
+ },
+ {
+  "id": "super-uwol",
+  "name": "Super Uwol",
+  "file": "super-uwol.nes",
+  "genre": "平台跳跃",
+  "author": "Mojon Twins",
+  "year": "2016",
+  "desc": "画风明快的怪物平台跳跃游戏。"
+ },
+ {
+  "id": "sgt-helmet-training-day",
+  "name": "Sgt. Helmet: Training Day",
+  "file": "sgt-helmet-training-day.nes",
+  "genre": "动作",
+  "author": "Mojon Twins",
+  "year": "2015",
+  "desc": "完成各项军事训练挑战的动作游戏。"
+ },
+ {
+  "id": "wo-xiang-niao-niao",
+  "name": "Wo Xiang Niao Niao",
+  "file": "wo-xiang-niao-niao.nes",
+  "genre": "射击",
+  "author": "Mojon Twins",
+  "year": "2019",
+  "desc": "Mojon Twins 出品的搞怪射击游戏。"
+ },
+ {
+  "id": "31-in-1-real-game",
+  "name": "31 in 1 Real Game!",
+  "file": "31-in-1-real-game.nes",
+  "genre": "合集",
+  "author": "Mojon Twins",
+  "year": "2015",
+  "desc": "一个 ROM 里塞了 31 个小游戏的趣味合集卡。"
+ },
+ {
+  "id": "concentration-room",
+  "name": "Concentration Room",
+  "file": "concentration-room.nes",
+  "genre": "解谜",
+  "author": "Damian Yerrick",
+  "year": "2013",
+  "desc": "翻牌记忆配对解谜游戏，GPL 开源。"
+ },
+ {
+  "id": "rhde-furniture-fight",
+  "name": "RHDE: Furniture Fight",
+  "file": "rhde-furniture-fight.nes",
+  "genre": "格斗",
+  "author": "Damian Yerrick",
+  "year": "2011",
+  "desc": "操纵客厅家具互殴的搞笑格斗游戏，GPL 开源。"
+ },
+ {
+  "id": "robotfindskitten",
+  "name": "robotfindskitten",
+  "file": "robotfindskitten.nes",
+  "genre": "冒险",
+  "author": "Damian Yerrick",
+  "year": "2014",
+  "desc": "经典禅意小游戏「寻找小猫」的 NES 版，GPL 开源。"
+ },
+ {
+  "id": "thwaite",
+  "name": "Thwaite",
+  "file": "thwaite.nes",
+  "genre": "动作",
+  "author": "Damian Yerrick",
+  "year": "2013",
+  "desc": "导弹防御风格的动作游戏，GPL 开源。"
+ },
+ {
+  "id": "nes-virus-cleaner",
+  "name": "NES Virus Cleaner",
+  "file": "nes-virus-cleaner.nes",
+  "genre": "动作",
+  "author": "SlyDog Studios",
+  "year": "2013",
+  "desc": "街机风格的杀毒动作游戏。"
+ },
+ {
+  "id": "driar",
+  "name": "Driar",
+  "file": "driar.nes",
+  "genre": "解谜",
+  "author": "Adolfsson & Eriksson",
+  "year": "2013",
+  "desc": "在 38 个环绕单屏关卡中收集全部星星。"
+ },
+ {
+  "id": "the-wit",
+  "name": "The Wit",
+  "file": "the-wit.nes",
+  "genre": "解谜",
+  "author": "dustmop",
+  "year": "2016",
+  "desc": "滑动方块解谜游戏。"
+ },
+ {
+  "id": "filthy-kitchen",
+  "name": "Filthy Kitchen",
+  "file": "filthy-kitchen.nes",
+  "genre": "动作",
+  "author": "dustmop",
+  "year": "2017",
+  "desc": "快节奏的厨房主题街机动作游戏。"
+ },
+ {
+  "id": "star-evil",
+  "name": "Star Evil",
+  "file": "star-evil.nes",
+  "genre": "射击",
+  "author": "Pubby",
+  "year": "2018",
+  "desc": "太空射击游戏。"
+ },
+ {
+  "id": "lunar-limit",
+  "name": "Lunar Limit",
+  "file": "lunar-limit.nes",
+  "genre": "射击",
+  "author": "Pubby",
+  "year": "2019",
+  "desc": "月球主题射击游戏。"
+ },
+ {
+  "id": "ralph-4",
+  "name": "Ralph 4",
+  "file": "ralph-4.nes",
+  "genre": "平台跳跃",
+  "author": "Pubby",
+  "year": "2017",
+  "desc": "小巧精悍的平台跳跃游戏。"
+ },
+ {
+  "id": "f-ff",
+  "name": "F-FF",
+  "file": "f-ff.nes",
+  "genre": "解谜",
+  "author": "Pubby",
+  "year": "2018",
+  "desc": "Pubby 出品的解谜游戏。"
+ },
+ {
+  "id": "falling",
+  "name": "Falling",
+  "file": "falling.nes",
+  "genre": "动作",
+  "author": "Tragicmuffin",
+  "year": "2019",
+  "desc": "极速下落的街机动作游戏，MIT 开源。"
+ },
+ {
+  "id": "tiger-jenny",
+  "name": "Tiger Jenny",
+  "file": "tiger-jenny.nes",
+  "genre": "平台跳跃",
+  "author": "Ludosity",
+  "year": "2014",
+  "desc": "老虎主题平台跳跃游戏。"
+ },
+ {
+  "id": "super-pakpak",
+  "name": "Super PakPak",
+  "file": "super-pakpak.nes",
+  "genre": "动作",
+  "author": "AOH Games",
+  "year": "2016",
+  "desc": "重力/推进器玩法的动作游戏。"
+ },
+ {
+  "id": "robo-ninja-climb",
+  "name": "Robo-Ninja Climb",
+  "file": "robo-ninja-climb.nes",
+  "genre": "动作",
+  "author": "Nathan Tolbert",
+  "year": "2019",
+  "desc": "扮演机器人忍者向上攀登的动作游戏。"
+ },
+ {
+  "id": "spacey-mcracey",
+  "name": "Spacey McRacey",
+  "file": "spaceymcracey.nes",
+  "genre": "竞速",
+  "author": "Nathan Tolbert",
+  "year": "2020",
+  "desc": "太空主题竞速游戏。"
+ },
+ {
+  "id": "vigilante-ninja",
+  "name": "Vigilante Ninja",
+  "file": "vigilante-ninja.nes",
+  "genre": "动作",
+  "author": "Dougeff",
+  "year": "2017",
+  "desc": "忍者义警题材的动作游戏。"
+ },
+ {
+  "id": "flappy-jack",
+  "name": "Flappy Jack",
+  "file": "flappy-jack.nes",
+  "genre": "动作",
+  "author": "Dougeff",
+  "year": "2014",
+  "desc": "flappy 式躲避街机游戏。"
+ },
+ {
+  "id": "rock-paper-scissors-lizard-spock",
+  "name": "Rock Paper Scissors Lizard Spock",
+  "file": "rock-paper-scissors-lizard-spock.nes",
+  "genre": "聚会",
+  "author": "Dougeff",
+  "year": "2015",
+  "desc": "石头剪刀布的扩展版：蜥蜴与斯波克。"
+ },
+ {
+  "id": "lightshields",
+  "name": "Lightshields",
+  "file": "lightshields.nes",
+  "genre": "射击",
+  "author": "Zutano Games",
+  "year": "2016",
+  "desc": "以护盾为核心玩法的射击游戏。"
+ },
+ {
+  "id": "mouser-ii",
+  "name": "Mouser II",
+  "file": "mouser-ii.nes",
+  "genre": "动作",
+  "author": "Tony Young",
+  "year": "2015",
+  "desc": "老鼠主题动作游戏。"
+ },
+ {
+  "id": "invaders-must-die",
+  "name": "Invaders Must Die",
+  "file": "invaders-must-die.nes",
+  "genre": "射击",
+  "author": "Sebastian Mihai",
+  "year": "2016",
+  "desc": "太空侵略者式射击游戏。"
+ },
+ {
+  "id": "mineshaft",
+  "name": "Mineshaft",
+  "file": "mineshaft.nes",
+  "genre": "动作",
+  "author": "Nioreh",
+  "year": "2015",
+  "desc": "深入矿井、努力生存的挖矿动作游戏。"
+ },
+ {
+  "id": "flappy-bird",
+  "name": "Flappy Bird",
+  "file": "flappy-bird.nes",
+  "genre": "动作",
+  "author": "Nioreh",
+  "year": "2014",
+  "desc": "flappy 现象级游戏的 NES 复刻版。"
+ },
+ {
+  "id": "assimilate",
+  "name": "Assimilate",
+  "file": "assimilate.nes",
+  "genre": "解谜",
+  "author": "Nessylum Games",
+  "year": "2018",
+  "desc": "同化主题解谜游戏。"
+ },
+ {
+  "id": "brony-blaster",
+  "name": "Brony Blaster",
+  "file": "brony-blaster.nes",
+  "genre": "射击",
+  "author": "FG Software",
+  "year": "2014",
+  "desc": "小马主题射击游戏。"
+ },
+ {
+  "id": "ambushed",
+  "name": "Ambushed",
+  "file": "ambushed.nes",
+  "genre": "射击",
+  "author": "SlyDog Studios",
+  "year": "2016",
+  "desc": "伏击主题射击游戏。"
+ },
+ {
+  "id": "mad-wizard",
+  "name": "Mad Wizard",
+  "file": "mad-wizard.nes",
+  "genre": "动作",
+  "author": "SlyDog Studios",
+  "year": "2016",
+  "desc": "巫师主题动作游戏。"
+ },
+ {
+  "id": "meteor-guard",
+  "name": "Meteor Guard",
+  "file": "meteor-guard.nes",
+  "genre": "射击",
+  "author": "SlyDog Studios",
+  "year": "2016",
+  "desc": "抵御陨石来袭的防御射击游戏。"
+ },
+ {
+  "id": "midnight-jogger",
+  "name": "Midnight Jogger",
+  "file": "midnight-jogger.nes",
+  "genre": "体育",
+  "author": "SlyDog Studios",
+  "year": "2016",
+  "desc": "午夜慢跑题材的体育游戏。"
+ },
+ {
+  "id": "zooming-secretary",
+  "name": "Zooming Secretary",
+  "file": "zooming-secretary.nes",
+  "genre": "动作",
+  "author": "Shiru & PinWizz",
+  "year": "2011",
+  "desc": "手忙脚乱接电话的办公室街机游戏，CC BY 4.0。"
+ },
+ {
+  "id": "lawn-mower",
+  "name": "Lawn Mower",
+  "file": "lawn-mower.nes",
+  "genre": "动作",
+  "author": "Shiru",
+  "year": "2011",
+  "desc": "割掉每一片草叶，公有领域（CC0）。"
+ },
+ {
+  "id": "chase",
+  "name": "Chase",
+  "file": "chase.nes",
+  "genre": "动作",
+  "author": "Shiru",
+  "year": "2013",
+  "desc": "简单的追逐小游戏，公有领域（CC0）。"
+ },
+ {
+  "id": "lan-master",
+  "name": "LAN Master",
+  "file": "lan-master.nes",
+  "genre": "解谜",
+  "author": "Shiru",
+  "year": "2013",
+  "desc": "网线主题解谜游戏，公有领域（CC0）。"
  }
 ]

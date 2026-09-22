@@ -66,5 +66,7 @@ main { padding: 22px 0 30px; }
 }
 .back:hover { background: var(--brand-d); }
 .play-title { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.focus-hint { margin-left: auto; color: var(--muted); font-size: 12px; white-space: nowrap; }
 #player { flex: 1 1 auto; min-height: 0; }
+#player:focus { outline: none; }
 #player canvas { image-rendering: pixelated; }

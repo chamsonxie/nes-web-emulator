@@ -10,10 +10,34 @@
 <div class="play-top">
   <a class="back" href="index.html">‹ 返回游戏库</a>
   <span id="gameTitle" class="play-title">加载中…</span>
+  <span class="focus-hint">按键没反应时点一下游戏画面</span>
 </div>
 <div id="player"></div>
 
 <script>
+// ---- 焦点锁定：模拟器的键盘监听绑在 #player 上，焦点离开就会失灵 ----
+// 保持焦点始终在游戏容器内，并拦截方向键/空格的默认行为（滚动、误触按钮）
+const GAME_KEYS = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' '];
+function lockFocus() {
+  const p = document.getElementById('player');
+  if (!p) return;
+  if (p.getAttribute('tabindex') !== '-1') p.setAttribute('tabindex', '-1');
+  const ae = document.activeElement;
+  if (ae !== p && !(ae && p.contains(ae))) {
+    try { p.focus({ preventScroll: true }); } catch (e) { p.focus(); }
+  }
+}
+window.addEventListener('keydown', e => {
+  if (GAME_KEYS.includes(e.key)) e.preventDefault();
+  lockFocus();
+}, true);
+window.addEventListener('keyup', e => {
+  if (GAME_KEYS.includes(e.key)) e.preventDefault();
+}, true);
+window.addEventListener('pointerdown', () => setTimeout(lockFocus, 0), true);
+window.addEventListener('focus', lockFocus);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) lockFocus(); });
+
 async function init() {
   const q = new URLSearchParams(location.search);
   const isUpload = q.get('upload') === '1';
@@ -53,6 +77,7 @@ async function init() {
 
   const s = document.createElement('script');
   s.src = 'data/loader.js';
+  s.onload = () => { setTimeout(lockFocus, 500); setTimeout(lockFocus, 2500); };
   document.body.appendChild(s);
 }
 document.addEventListener('DOMContentLoaded', init);

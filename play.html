@@ -41,9 +41,13 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden) lock
 async function init() {
   const q = new URLSearchParams(location.search);
   const isUpload = q.get('upload') === '1';
+  const remoteUrl = q.get('url');
   let gameUrl, gameName;
 
-  if (isUpload) {
+  if (remoteUrl) {
+    gameName = q.get('name') || '网络 ROM';
+    gameUrl = remoteUrl;
+  } else if (isUpload) {
     const dataUrl = sessionStorage.getItem('uploadRom');
     gameName = q.get('name') || sessionStorage.getItem('uploadRomName') || '本地 ROM';
     if (!dataUrl) {

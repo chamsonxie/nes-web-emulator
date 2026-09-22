@@ -47,12 +47,12 @@ async function init() {
   window.EJS_gameUrl = gameUrl;
   window.EJS_gameName = gameName;
   window.EJS_core = 'nes';
-  window.EJS_pathtodata = 'https://cdn.emulatorjs.com/stable/data/';
+  window.EJS_pathtodata = 'data/';
   window.EJS_startOnLoaded = true;
   window.EJS_color = '#1a1a2e';
 
   const s = document.createElement('script');
-  s.src = 'https://cdn.emulatorjs.com/stable/data/loader.js';
+  s.src = 'data/loader.js';
   document.body.appendChild(s);
 }
 document.addEventListener('DOMContentLoaded', init);

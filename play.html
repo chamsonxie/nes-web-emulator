@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>游戏中…</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="play-body">
+<div class="play-top">
+  <a class="back" href="index.html">‹ 返回游戏库</a>
+  <span id="gameTitle" class="play-title">加载中…</span>
+</div>
+<div id="player"></div>
+
+<script>
+async function init() {
+  const q = new URLSearchParams(location.search);
+  const isUpload = q.get('upload') === '1';
+  let gameUrl, gameName;
+
+  if (isUpload) {
+    const dataUrl = sessionStorage.getItem('uploadRom');
+    gameName = q.get('name') || sessionStorage.getItem('uploadRomName') || '本地 ROM';
+    if (!dataUrl) {
+      alert('未找到上传的 ROM，请重新上传。');
+      location.href = 'index.html';
+      return;
+    }
+    // dataURL -> Blob -> objectURL，模拟器读取更稳定
+    const blob = await (await fetch(dataUrl)).blob();
+    gameUrl = URL.createObjectURL(blob);
+    sessionStorage.removeItem('uploadRom');
+  } else {
+    const id = q.get('g');
+    const games = await fetch('games.json').then(r => r.json());
+    const g = games.find(x => x.id === id);
+    if (!g) { location.href = 'index.html'; return; }
+    gameName = g.name;
+    gameUrl = 'roms/' + g.file;
+  }
+
+  document.getElementById('gameTitle').textContent = gameName;
+  document.title = gameName + ' - 网页 NES 模拟器';
+
+  window.EJS_player = '#player';
+  window.EJS_gameUrl = gameUrl;
+  window.EJS_gameName = gameName;
+  window.EJS_core = 'nes';
+  window.EJS_pathtodata = 'https://cdn.emulatorjs.com/stable/data/';
+  window.EJS_startOnLoaded = true;
+  window.EJS_color = '#1a1a2e';
+
+  const s = document.createElement('script');
+  s.src = 'https://cdn.emulatorjs.com/stable/data/loader.js';
+  document.body.appendChild(s);
+}
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

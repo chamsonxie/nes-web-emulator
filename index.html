@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>网页 NES 模拟器</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <h1>🎮 网页 NES 模拟器</h1>
+    <p class="sub"><b id="gameCount">–</b> 款免费 homebrew 游戏 · 点击即玩 · 也支持上传本地 .nes 文件</p>
+    <div class="toolbar">
+      <input id="search" type="text" placeholder="搜索游戏名 / 类型 / 作者…">
+      <select id="genreFilter"><option value="">全部类型</option></select>
+      <button id="uploadBtn" class="upload">📁 上传本地 ROM</button>
+      <input id="fileInput" type="file" accept=".nes,.zip" hidden>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>没有找到匹配的游戏</p>
+</main>
+
+<footer class="wrap foot">
+  <p>内置游戏均为作者免费发布的 homebrew 作品或公有领域 ROM，仅供学习交流。模拟器核心由 <a href="https://github.com/EmulatorJS/EmulatorJS" target="_blank" rel="noopener">EmulatorJS</a> 提供。上传的本地 ROM 仅在你的浏览器中运行，不会上传到任何服务器。</p>
+</footer>
+
+<script>
+const GENRE_EMOJI = {
+  '平台跳跃': '🏃', '解谜': '🧩', '解谜平台': '🧩', '格斗': '🥊', '体育': '🏈',
+  '角色扮演': '🗡️', '动作': '💥', '冒险': '🗺️', '动作冒险': '🧭',
+  '射击': '🔫', '竞速': '🏎️', '音乐节奏': '🎵', '类银河战士': '🌌'
+};
+let GAMES = [];
+
+async function init() {
+  GAMES = await fetch('games.json').then(r => r.json());
+  document.getElementById('gameCount').textContent = GAMES.length;
+  const genres = [...new Set(GAMES.map(g => g.genre))].sort();
+  const sel = document.getElementById('genreFilter');
+  genres.forEach(g => {
+    const o = document.createElement('option');
+    o.value = g; o.textContent = (GENRE_EMOJI[g] || '🎮') + ' ' + g;
+    sel.appendChild(o);
+  });
+  render();
+  document.getElementById('search').addEventListener('input', render);
+  sel.addEventListener('change', render);
+  document.getElementById('uploadBtn').onclick = () =>
+    document.getElementById('fileInput').click();
+  document.getElementById('fileInput').addEventListener('change', handleUpload);
+}
+
+function handleUpload(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      sessionStorage.setItem('uploadRom', reader.result);
+      sessionStorage.setItem('uploadRomName', file.name.replace(/\.(nes|zip)$/i, ''));
+      location.href = 'play.html?upload=1&name=' + encodeURIComponent(file.name.replace(/\.(nes|zip)$/i, ''));
+    } catch (err) {
+      alert('文件太大，无法载入。请换一个小一点的 ROM。');
+    }
+    e.target.value = '';
+  };
+  reader.readAsDataURL(file);
+}
+
+function render() {
+  const kw = document.getElementById('search').value.trim().toLowerCase();
+  const genre = document.getElementById('genreFilter').value;
+  const list = GAMES.filter(g => {
+    if (genre && g.genre !== genre) return false;
+    if (kw && !(g.name + ' ' + g.genre + ' ' + g.author + ' ' + g.desc).toLowerCase().includes(kw)) return false;
+    return true;
+  });
+  const grid = document.getElementById('grid');
+  grid.innerHTML = list.map(g => `
+    <a class="card" href="play.html?g=${g.id}">
+      <div class="cover">${GENRE_EMOJI[g.genre] || '🎮'}</div>
+      <div class="card-body">
+        <div class="card-name">${escapeHtml(g.name)}</div>
+        <div class="card-meta">${escapeHtml(g.genre)} · ${escapeHtml(g.author)} · ${escapeHtml(g.year)}</div>
+        <div class="card-desc">${escapeHtml(g.desc)}</div>
+      </div>
+    </a>`).join('');
+  document.getElementById('empty').hidden = list.length > 0;
+}
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

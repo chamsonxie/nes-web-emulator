@@ -1,0 +1,227 @@
+[
+ {
+  "id": "alter-ego",
+  "name": "Alter Ego",
+  "file": "alter-ego.nes",
+  "genre": "解谜平台",
+  "author": "Shiru",
+  "year": "2011",
+  "desc": "在两个重力翻转的分身之间切换，挑战单屏解谜平台关卡。"
+ },
+ {
+  "id": "nova-the-squirrel",
+  "name": "Nova the Squirrel",
+  "file": "nova-the-squirrel.nes",
+  "genre": "平台跳跃",
+  "author": "NovaSquirrel",
+  "year": "2018",
+  "desc": "敏捷的小松鼠在广阔开放世界中冒险的免费平台跳跃游戏。"
+ },
+ {
+  "id": "super-tilt-bro",
+  "name": "Super Tilt Bro",
+  "file": "super-tilt-bro.nes",
+  "genre": "格斗",
+  "author": "Sylvain Gadrat",
+  "year": "2018",
+  "desc": "NES 上的大乱斗式平台格斗游戏，作者免费发布的版本。"
+ },
+ {
+  "id": "tower-of-turmoil",
+  "name": "The Tower of Turmoil",
+  "file": "tower-of-turmoil.nes",
+  "genre": "平台跳跃",
+  "author": "CutterCross",
+  "year": "2020",
+  "desc": "带领剑士 Takemaru 逐层登上被诅咒的高塔。"
+ },
+ {
+  "id": "what-remains",
+  "name": "What Remains",
+  "file": "what-remains.nes",
+  "genre": "冒险",
+  "author": "Iodine Dynamics",
+  "year": "2019",
+  "desc": "关于媒体操纵与告密者的剧情向互动冒险游戏。"
+ },
+ {
+  "id": "rumblefest-89",
+  "name": "Rumblefest 89",
+  "file": "rumblefest-89.nes",
+  "genre": "体育",
+  "author": "Jurassic Sunset Games",
+  "year": "2020",
+  "desc": "80 年代职业摔跤动作游戏，NESmaker Byte-Off 2020 参赛作品。"
+ },
+ {
+  "id": "shadow-animus",
+  "name": "Shadow Animus",
+  "file": "shadow-animus.nes",
+  "genre": "角色扮演",
+  "author": "Chronicler of Legends",
+  "year": "2020",
+  "desc": "黑暗奇幻冒险 RPG，探索被诅咒的村庄、对抗暗影之心。"
+ },
+ {
+  "id": "bobl",
+  "name": "Bobl",
+  "file": "bobl.nes",
+  "genre": "解谜平台",
+  "author": "Morphcat Games",
+  "year": "2020",
+  "desc": "Morphcat Games 出品的精巧解谜平台游戏。"
+ },
+ {
+  "id": "project-dart",
+  "name": "Project DART",
+  "file": "project-dart.nes",
+  "genre": "动作",
+  "author": "CutterCross",
+  "year": "2021",
+  "desc": "在无尽之路上的高速街机动作游戏。"
+ },
+ {
+  "id": "witch-n-wiz",
+  "name": "Witch n' Wiz",
+  "file": "witch-n-wiz.nes",
+  "genre": "解谜",
+  "author": "Matt Hughson",
+  "year": "2017",
+  "desc": "女巫与她的巫师伙伴合作的推箱子解谜冒险。"
+ },
+ {
+  "id": "slow-mole",
+  "name": "Slow Mole",
+  "file": "slow-mole.nes",
+  "genre": "解谜",
+  "author": "KHAN Games",
+  "year": "2021",
+  "desc": "引导慢吞吞的鼹鼠穿过迷宫般的解谜关卡，公有领域作品。"
+ },
+ {
+  "id": "aethos-beginnings",
+  "name": "Aethos Beginnings",
+  "file": "aethos-beginnings.nes",
+  "genre": "类银河战士",
+  "author": "RetroBroGaming",
+  "year": "2024",
+  "desc": "科幻类银河战士恶魔城试玩版，随 AI 探险家 Kyra 探索 Aethos 星。"
+ },
+ {
+  "id": "cheril-the-goddess",
+  "name": "Cheril the Goddess",
+  "file": "cheril-the-goddess.nes",
+  "genre": "平台跳跃",
+  "author": "Mojon Twins",
+  "year": "2016",
+  "desc": "Mojon Twins NESdev Compo 2016 参赛平台跳跃游戏。"
+ },
+ {
+  "id": "cheril-the-writer",
+  "name": "Cheril the Writer",
+  "file": "cheril-the-writer.nes",
+  "genre": "动作冒险",
+  "author": "Mojon Twins",
+  "year": "2018",
+  "desc": "Cheril 前往 Pepinoni 撰写小说的动作冒险游戏。"
+ },
+ {
+  "id": "cheril-perils-classic",
+  "name": "Cheril Perils Classic",
+  "file": "cheril-perils-classic.nes",
+  "genre": "平台跳跃",
+  "author": "Mojon Twins",
+  "year": "2018",
+  "desc": "经典风格的 Cheril 平台跳跃冒险。"
+ },
+ {
+  "id": "cadaverion",
+  "name": "Cadaverion",
+  "file": "cadaverion.nes",
+  "genre": "动作冒险",
+  "author": "Mojon Twins",
+  "year": "2018",
+  "desc": "带点恐怖氛围的动作冒险游戏。"
+ },
+ {
+  "id": "bootee",
+  "name": "Bootee",
+  "file": "bootee.nes",
+  "genre": "解谜",
+  "author": "Mojon Twins",
+  "year": "2018",
+  "desc": "用靴子踢东西解谜的趣味益智游戏。"
+ },
+ {
+  "id": "yun",
+  "name": "Yun",
+  "file": "yun.nes",
+  "genre": "平台跳跃",
+  "author": "Mojon Twins",
+  "year": "2016",
+  "desc": "复古重制风格的平台跳跃游戏。"
+ },
+ {
+  "id": "journey-center-alien",
+  "name": "Journey to the Center of the Alien",
+  "file": "journey-center-alien.nes",
+  "genre": "冒险",
+  "author": "Mojon Twins",
+  "year": "2019",
+  "desc": "探索异星地心的冒险游戏。"
+ },
+ {
+  "id": "f-theta",
+  "name": "F-Theta",
+  "file": "f-theta.nes",
+  "genre": "竞速",
+  "author": "LITTLE SOUND SOFT",
+  "year": "2021",
+  "desc": "日本 homebrew 竞速游戏，旋转赛道、天气与车灯效果。"
+ },
+ {
+  "id": "mine-mayhem",
+  "name": "Mine Mayhem",
+  "file": "mine-mayhem.nes",
+  "genre": "动作",
+  "author": "FG Soft",
+  "year": "2021",
+  "desc": "Ludum Dare 48 采矿主题街机动作游戏。"
+ },
+ {
+  "id": "utaco",
+  "name": "Utaco",
+  "file": "utaco.nes",
+  "genre": "音乐节奏",
+  "author": "Zurashu",
+  "year": "2015",
+  "desc": "日本 homebrew 音乐节奏游戏。"
+ },
+ {
+  "id": "zdey-the-game",
+  "name": "Zdey the Game",
+  "file": "zdey-the-game.nes",
+  "genre": "平台跳跃",
+  "author": "Art'Cade",
+  "year": "2021",
+  "desc": "Action 53 Vol.4 公有领域合集中的平台跳跃游戏。"
+ },
+ {
+  "id": "lala-the-magical",
+  "name": "Lala the Magical",
+  "file": "lala-the-magical.nes",
+  "genre": "射击",
+  "author": "Mojon Twins",
+  "year": "2016",
+  "desc": "魔法少女题材的射击游戏。"
+ },
+ {
+  "id": "chrono-knight",
+  "name": "Chrono Knight",
+  "file": "chrono-knight.nes",
+  "genre": "动作",
+  "author": "Artix",
+  "year": "2020",
+  "desc": "时间主题动作游戏，Action 53 Vol.4 公有领域合集。"
+ }
+]
